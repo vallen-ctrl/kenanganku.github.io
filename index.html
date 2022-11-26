@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/homepage.css">
+    <link rel="icon" href="/Style/img/Pinggir.jpg">
+    <title>Login :D</title>
+</head>
+<body>
+    <div class="continer">
+        <img src="/Style/img/Pinggir.jpg" alt="logo">
+        <div class="loginpage">
+            <form action="" method="post">
+                <p>LOGIN</p>
+                <div class="input">
+                    <input placeholder="Your Name" type="text" name="name" id="Username" value="">
+                    <input placeholder="Password" type="password" name="pass" id="UserPass" value="">
+                </div>
+                <input type="button" value="Login" class="btnlogin" onclick="check()">
+                <hr>
+                <div class="continerloginpage">
+                    <a href=""><img src="https://www.transparentpng.com/thumb/logo-instagram/z75gfy-instagram-logo-png.png" alt="instagram logo png @transparentpng.com" class="instagramlogo"></a>
+                    <a href=""><img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" class="googlelogo"></a>
+                </div>
+
+                <div class="footer">
+                    <a href="/main.html">ss</a>
+                    <span>copyright by vallen</span>
+                    <p>login page</p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function check(){
+            const username = document.getElementById("Username");
+            const userpassword = document.getElementById("UserPass");
+            function countWords(str) {
+                const arr = str.split(' ');
+                return arr.filter(word => word !== '').length;
+            }
+            
+            if(countWords(userpassword.value) < 8 && countWords(username.value) < 1){
+                userpassword.style.animation = "fade 2s ease infinite"
+                username.style.animation = "fade 2s ease infinite"
+            }else{
+                window.location.pathname = "/main.html"
+            }
+        }
+    </script>
+</body>
+</html>

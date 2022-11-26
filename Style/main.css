@@ -1,0 +1,134 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+          -45deg, 
+          rgba(59,173,227,1) 0%, 
+          rgba(87,111,230,1) 25%, 
+          rgba(152,68,183,1) 51%, 
+          rgba(255,53,127,1) 100%
+    );  
+    animation: body 20s ease infinite;
+}
+
+@keyframes body { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+}
+
+.judul{
+    margin: 20px;
+
+    color: #fff;
+}
+.continer{
+   
+    display: flex;
+    height: 780px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.data {
+    margin-top: 20px;
+    height: 309px;
+    border-radius: 20px;
+    margin-right: 28px ;
+    padding: 20px;
+    background-color: #fff;
+    width: 390px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.data:hover{
+    height: 400px;
+}
+
+
+.data p{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.des{
+    translate: 0px 30px;
+    
+}
+
+.img{
+    margin: 9px;
+    display: flex;
+    justify-content: center;
+}
+
+.dataimg{
+    height: 250px;
+    border-radius: 9px;
+}
+
+.continerconten{
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    top: 900px;    
+    width: 100%;
+    height: auto;
+    margin: 20px;
+}
+
+.foto img{
+    padding: 20px;
+    height: 247px;
+}
+.foto {
+    margin-bottom: 40px;
+}
+
+.kenangan{
+    margin: 20px;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 975px) {
+    .continer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .data {
+        margin-top: 20px;
+        height: 309px;
+        border-radius: 20px;
+        margin-right: 28px ;
+        padding: 20px;
+        background-color: #fff;
+        width: 390px;
+        overflow: hidden;
+        transition: 1s;
+    }
+    
+    .data:hover{
+        height: 400px;
+    }
+
+    .dataimg{
+        height: 150px;
+        border-radius: 9px;
+    }
+    
+}
